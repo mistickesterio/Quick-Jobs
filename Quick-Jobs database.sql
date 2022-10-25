@@ -18,9 +18,9 @@ CREATE TABLE Area_vagas(
     PRIMARY KEY(iD)
 );
 
-INSERT INTO Cliente (Nome,CPF) VALUES
-('Lucas', '12312312312'),
-('Luiz', '32132132132'),
+INSERT INTO Vagas (Descricao, CPF) VALUES
+('https://www.linkedin.com/jobs/view/3319869254', '12312312312'),
+('https://www.linkedin.com/jobs/view/3312861995', '32132132132'),
 ('Lourival', '12312312312'),
 ('Otavio', '32132132132'),
 ('Kerolaine', '32132132132'),
@@ -33,6 +33,3 @@ INSERT INTO Produto (Nome,ID) VALUES
 ('Pastél', '04'),
 ('Coca Cola', '05'),
 ('Cachorro quente', '06');
-
-
-
