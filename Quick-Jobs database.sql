@@ -1,35 +1,30 @@
-create DATABASE Quick_Jobs;
-USE Quick_Jobs;
+create DATABASE Tres_chances;
+USE Tres_chances;
 
-CREATE TABLE Vagas(
+CREATE TABLE Jogador(
     ID INT NOT NULL AUTO_INCREMENT,
-    Descricao VARCHAR(255),
-    Titulo VARCHAR(255),
-    Empresa VARCHAR(255),
-    Icone nvarchar,
-    Salario VARCHAR(255),
-    Cidade VARCHAR(255),
+    Nome INT NOT NULL,
+    Acertos INT NOT NULL,
+    Tempo_Gasto INT NOT NULL,
     PRIMARY KEY (ID)
 );
 
-CREATE TABLE Area_vagas(
-    ID VARCHAR(2) NOT NULL,
-    URL VARCHAR(255),
-    PRIMARY KEY(iD)
+CREATE TABLE Informacoes(
+    ID INT NOT NULL AUTO_INCREMENT,
+    Data DATETIME,
+    Comida VARCHAR(255),
+    Cor VARCHAR(255),
+    Lugar VARCHAR(255),
+    PRIMARY KEY (ID)
 );
 
-INSERT INTO Vagas (Descricao, CPF) VALUES
-('https://www.linkedin.com/jobs/view/3319869254', '12312312312'),
-('https://www.linkedin.com/jobs/view/3312861995', '32132132132'),
-('Lourival', '12312312312'),
-('Otavio', '32132132132'),
-('Kerolaine', '32132132132'),
-('Thiago', '34534534534');
+INSERT INTO Jogador (ID, Nome, Acertos, Tempo_Gasto) VALUES
+(default, 300000, 'Lucas', '15', '40s'),
+(default, 20000, 'Luiz', '21', '30s'),
+(default, 200000, 'Thiago', '20', '20s');
 
-INSERT INTO Produto (Nome,ID) VALUES
-('Pipoca', '01'),
-('Docê de Leite', '02'),
-('Manteiga', '03'),
-('Pastél', '04'),
-('Coca Cola', '05'),
-('Cachorro quente', '06');
+INSERT INTO Informacoes (ID, Comida, Cor, Lugar) VALUES
+(default, 'BANANA', 'AZUL', 'BRASIL'),
+(default, 'MACARAO', 'VERMELHO', 'MEXICO'),
+(default, 'ARROZ', 'ROXO', 'MINAS'),
+(default, 'LIMAO', 'LARANJA', 'GOIAS');
