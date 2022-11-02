@@ -31,8 +31,7 @@ INSERT INTO Area(nome) VALUES
 ("testes");
 
 -- segundo insert.
-INSERT INTO Vaga(ID, Area, Descricao, Titulo, Empresa, Icone, Salario, Cidade, url) VALUES
-(DEFAULT, DEFAULT, 'Originating in Brazil, we also work in Argentina and we have the ambition to win the world. We propel the people and the country with energy solutions. Energy is our business, and is in our name.',
-'Product Owner', 'Raigen',  DEFAULT, 'Não visivel', "Santana", 'https://www.linkedin.com/jobs/view/3319869254'),
-(DEFAULT, DEFAULT, 'Acreditamos que os indivíduos e suas interações fazem o seu e o nosso negócio. Este é o nosso jeito de fazer: com tecnologia e simplicidade.',
- 'Product Owner', 'Meta', DEFAULT, 'Não visivel', "Santana", 'https://www.linkedin.com/jobs/view/3312861995');
+INSERT INTO Vaga values (default, 1, 'Originating in Brazil, we also work in Argentina and we have the ambition to win the world. We propel the people and the country with energy solutions. Energy is our business, and is in our name.', 'Product Owner', 'Raigen',  'DEFAULT', 'Não visivel', "Santana", 'https://www.linkedin.com/jobs/view/3319869254');
+INSERT INTO Vaga values (default, 2, 'Acreditamos que os indivíduos e suas interações fazem o seu e o nosso negócio. Este é o nosso jeito de fazer: com tecnologia e simplicidade.', 'Product Owner', 'Meta', 'DEFAULT', 'Não visivel', "Santana", 'https://www.linkedin.com/jobs/view/3312861995');
+ 
+ select * from Vaga;
