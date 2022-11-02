@@ -1,5 +1,0 @@
-SELECT * FROM Atendimento as Relacionamentos
-INNER JOIN Cliente
-ON Relacionamentos.ClienteID = Cliente.ID
-INNER JOIN Produto
-ON Relacionamentos.IDProduto = Produto.ID;
